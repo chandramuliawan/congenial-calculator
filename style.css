@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+button {
+    font-size: 2rem;
+    padding: 8px;
+    width: 90px;
+    height: 90px;
+    border-radius: 5%;
+    background-color: lightslategray;
+    color: azure;
+}
+
+.calculatorContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: 10vh auto;
+    padding: 16px;
+    gap: 10 px;
+    max-width: 480px;
+
+    background-color: gray;
+
+    border: 2px solid black;
+}
+
+.display {
+    text-align: end;
+    align-content: end;
+    padding: 0 8px;
+    /* border: 1px solid black; */
+    background-color: lightblue;
+
+    height: 150px;
+}
+
+.currentInput{
+    font-size: 2em;
+}
+
+.btnContainer {
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+
+    /* border: 1px solid black; */
+}
+
+.btnNumbers{
+    gap: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+
+.btnOperand{
+    gap: 4px;
+    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+}
+
+.btnOthers{
+    gap: 4px;
+    justify-content: space-between;
+    display: flex;
+    flex:1;
+    padding: 8px;
+    /* border: 1px solid black; */
+    
+}
+
+.btnResult,
+.btnZero{
+    flex-grow: 1;
+}
+
+.disabled {
+    pointer-events: none;
+    background-color: black;
+    opacity: 0.2;
+}
